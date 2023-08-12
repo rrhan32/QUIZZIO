@@ -1,0 +1,18 @@
+$disabled:#ffffff;
+.answer-timer-container{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    border-bottom:5px solid $disabled ;
+
+    .progess{
+        height:5px;
+        transition-duration:1s;
+        width: 0;
+        background:red;
+        transition-timing-function:linear;
+
+    }
+
+}
