@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {resultInitialState} from "../../constant.js"
 import AnswerTimer from "../AnswerTimer/AnswerTimer";
+// import TemporaryDrawer from "./Drawer.jsx"
 const Quiz=({questions})=>{
         const [currentQuestion,setCurrentQuestion]=useState(0);
         const [answerIdx,setAnswerIdx]=useState(null);
@@ -58,7 +59,9 @@ const Quiz=({questions})=>{
                 onClickNext(false);
             }
          return(
+           
          <div className="quiz-container">
+             {/* <TemporaryDrawer/> */}
             {!showResult ?(
             <>
                  {showAnswerTimer && <AnswerTimer duration={5} onTimeup={handleTimeup}/>}
@@ -73,7 +76,7 @@ const Quiz=({questions})=>{
                       ))}
                 </ul>
                 <div className="footer">
-                    <button onClick={()=>onClickNext(answer)} disabled={answerIdx===null}>
+                    <button  onClick={()=>onClickNext(answer)} disabled={answerIdx===null}>
                         {currentQuestion===questions.length-1?"Finish":"Next"}
                     </button>
                 </div>

@@ -3,7 +3,7 @@ $accent:#d08642;
 $bg:#ffffff;
 $bg-accent:#e7e8e9;
 $disabled:#9c9c9c;
-$foreground:#2d264b;
+$foreground:#ffd700;
 
 body {
   font-family:monospace;
@@ -24,11 +24,14 @@ body {
   padding:30px 60px;
   box-sizing: border-box;
   position: relative;
+  background-color: #000;
+    color: #fff;
+    opacity: 0.5;
 
   .active-question-no{
     font-weight:  500;
     font-size:32px;
-    color:$primary;
+    color:$foreground;
 
   }
   .total-question{
@@ -43,12 +46,13 @@ body {
     
   }
   button{
-    display:block;
+     color:#ffd700;
   }
   .result{
     text-align:center;
 
     h3{
+      color:#ffd700;
       font-size:24px;
       letter-spacing:1.4px;
       text-align:center;
@@ -58,11 +62,19 @@ body {
       font-size:16px;
       font-weight:500;
       span{
-        color:$primary;
+        color: #ffd700;
         font-size:22px;
       }
     }
   }
+}
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
  
 // }
