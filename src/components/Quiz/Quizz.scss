@@ -1,0 +1,29 @@
+li{
+    list-style:decimal;
+    padding: 0;
+  }
+    li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+   li {
+    border-color: #FFD700;
+    // background-color: #f0f0f0;
+    animation: selectionAnimation 0.5s ease;
+  }
+  
+  @keyframes selectionAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

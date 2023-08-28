@@ -1,4 +1,4 @@
-export const jsQuizz = {
+export const jsQuizzcs = {
     questions: [
       {
         question:
